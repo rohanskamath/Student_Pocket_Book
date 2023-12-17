@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --main-bg-color: #072b5a;
+  --main-text-color: #072b5a;
+  --second-text-color: #bbbec5;
+  --second-bg-color: #c1ccef;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.dashboard-text{
+  color: white;
+  width: auto;
+}
+.dashboard-link{
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Poppins',sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  color:black;
+}
+.second-text {
+  color: var(--second-text-color);
+}
+
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to right,
+    #072b5a,
+    #072b5a,
+    #072b5a,
+    #072b5a,
+    #072b5a
+  );
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+.manipal-logo{
+  width:200px;
+  height: auto;
+  align-items: center;
+}
+/* Profile */
+.navitems a{
+    margin: 100px;
+    font-size: 1em;
+    color: black;
+}
+/*Search Box*/
+.search-box
+{
+    padding-top: 10px ;
+    align-items: center;
+}
+.search-input{
+    border: 1px solid #072b5a;
+}
+.search-input:focus{
+    outline: none;
+    --webkit-box-shadow:none;
+    box-shadow: none;
+    border: 1px solid #558bd3;
+}
+/* Section */
+.allbooks{
+  margin-top: 100px;
+}
+.heading{
+  color: white;
+  font-size: larger;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+}
+.headingapproval{
+  color: white;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+}
+.dataTables_info { 
+  color:white;
+}
+/* Mobile Navigation Bar */
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-toggler {
+    border: 1px solid white;
+}
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
